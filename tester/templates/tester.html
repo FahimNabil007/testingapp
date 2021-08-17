@@ -1,0 +1,26 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+<html>
+<div class="container text-center">
+
+<head>
+<title>Tester Update Input</title>
+</head>
+
+<body>
+<h1 background-color = green >Create a Post </h1>
+<form action="" method="POST">
+{% csrf_token %} 
+<span class="input-group-text" id="inputGroup-sizing-default">Bug_Type</span>
+  <input type="text" name="title" class="form-control" aria-label="Sizing example 100" aria-describedby="inputGroup-sizing-default">
+
+Description : <br/>
+<textarea cols="100"  name="content" rows="8" >
+</textarea><br/> <br/>
+<input class="btn btn-outline-primary" type="submit" value="Post"/>
+
+</form>
+</body>
+</div>
+
+</html>
